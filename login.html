@@ -44,7 +44,42 @@
                 </div>
             </nav>
         </header>
-        <main class="flex-shrink-0">
+        <main>
+            <form id="loginform">
+                <div class="container login-form-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label login-form-label"><u>Choose a Login Method:</u></label>
+                            <div class="mb-3">    
+                                <input type="radio" id="emailradioinput" name="loginmethod">
+                                <label for="emailradioinput" class="login-form-label emailradioinputlabel">Email</label>
+                                <input type="email" class="form-control emaillogin" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">  
+                                <input type="radio" id="usernameradioinput" name="loginmethod">
+                                <label for="usernameradioinput" class="login-form-label usernameradioinputlabel">User Name</label>
+                                <input type="text" class="form-control usernamelogin" id="exampleFormControlInput1" placeholder="input your user name">
+                            </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label login-form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 justify-content-center">
+                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-info">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </main>
         <footer class="footer">
             <div class="container-fluid">

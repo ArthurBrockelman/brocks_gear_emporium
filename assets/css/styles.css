@@ -54,3 +54,45 @@ svg {
     background-color: #A6E1FA;
     color: #0E6BA8;
 }
+
+.login-form-label {
+    color: azure;
+    padding: 10px;
+}
+
+.login-form-container {
+    padding: 10px 10px 10px 10px;
+}
+
+#emailradioinput:checked + .emailradioinputlabel {
+    color: #A6E1FA;
+    text-decoration: underline;
+}
+
+#usernameradioinput:checked + .usernameradioinputlabel {
+    color: #A6E1FA;
+    text-decoration: underline;
+}
+
+input#emailradioinput:checked~.emaillogin {
+    visibility:visible;
+}
+
+.emaillogin {
+    visibility: hidden;
+}
+
+input#usernameradioinput:checked~.usernamelogin {
+    visibility:visible;
+}
+
+.usernamelogin {
+    visibility: hidden;
+}
+
+.login-form-container {
+    border: 5px;
+    border-color: #A6E1FA;
+}
+
+
