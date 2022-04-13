@@ -90,9 +90,21 @@ input#usernameradioinput:checked~.usernamelogin {
     visibility: hidden;
 }
 
+
 .login-form-container {
     border: 5px;
-    border-color: #A6E1FA;
+    background-color: #256e8d;
+    max-width: 500px;
+    color: azure;
+}
+
+.loginform {
+    padding-top: 25px;
+    color: azure;
+}
+
+a#signuplink {
+    color: #A6E1FA;
 }
 
 
