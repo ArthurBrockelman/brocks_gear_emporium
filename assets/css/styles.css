@@ -97,7 +97,7 @@ input#usernameradioinput:checked~.usernamelogin {
     border-color: #A6E1FA;
     max-width: 500px;
     color: azure;
-
+    padding-top: 10px;
 }
 
 .loginform {
@@ -129,8 +129,19 @@ a#signuplink {
 
 }
 
+main > * {
+    padding-top: 10px;
+    background-color: #00072d;
+}
+
+.card > img{
+    max-height: 300px
+}
 
 
+.productscontainer, .productscontainer * {
+    padding: 10px
+}
 
 
 
