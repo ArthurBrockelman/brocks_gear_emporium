@@ -118,10 +118,17 @@ a#signuplink {
     margin: 10px
 }
 
-.feedbackform {
+.feedbackform > * {
     margin: 10px;
-    padding: 10px;
 }
+
+.feedbackformcontainer {
+    height: 500px;
+    background-color: #00072d;
+    color: azure;
+
+}
+
 
 
 

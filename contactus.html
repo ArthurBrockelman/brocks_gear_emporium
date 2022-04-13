@@ -57,23 +57,25 @@
             </nav>
         </header>
         <main>
-            <div class="container-fluid">
-                <div class="container bg-light">
+            <div class="container-fluid d-flex aligns-items-center ">
+                <div class="container d-flex aligns-items-center feedbackformcontainer">
                     <div class="row justify-content-center">
                         
                         <form action=""></form>
-                            <div class="container">
-                                <div class="row">
-                                    <h1>Have questions or feedback?</h1>
+                            <div class="container-fluid feedbackform">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <h1>Have questions or feedback?</h1>
+                                    </div>
                                 </div>
                                 <fieldset>
                                     <legend>Contact Us</legend>
-                                    <div class="row">
+                                    <div class="row justify-content-center">
                                         <div class="col-md-3">
                                             <label for="feedbacktype">Feedback Type:</label>
                                         </div>
                                         <div class="col-md-9">
-                                            <select type="text" id="feedbacktype">
+                                            <select type="text" id="feedbacktype" required>
                                                 <option value="I love your website">I love your website!</option>
                                                 <option value="Your website is awesome">Your website is awesome!</option>
                                                 <option value="Other">Other</option>
@@ -81,11 +83,22 @@
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        
-                                            <label for="comment">Comments:</label>
-                               
+                                        <div class="col-md-12 justify-content-center">
+                                            <label for="comment"><b>Comments:</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <textarea maxlength="300" rows="7" cols="50" required></textarea>    
                                     </div>
                                 </fieldset>
+                                <Div class="row justify-content-center"">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-info" >Submit</button>
+                                    </div>
+                                </Div>
                             </div>
                         
                         
