@@ -13,13 +13,14 @@ body {
     margin-bottom: 60px;
 }
 
-.footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
+    background-color: #A6E1FA;
 
 }
 
@@ -132,6 +133,10 @@ a#signuplink {
 main > * {
     padding-top: 10px;
     background-color: #00072d;
+}
+
+.card {
+    background-color:#A6E1FA
 }
 
 .card > img{
