@@ -94,8 +94,10 @@ input#usernameradioinput:checked~.usernamelogin {
 .login-form-container {
     border: 5px;
     background-color: #256e8d;
+    border-color: #A6E1FA;
     max-width: 500px;
     color: azure;
+
 }
 
 .loginform {
@@ -114,6 +116,11 @@ a#signuplink {
 
 .registerform {
     margin: 10px
+}
+
+.feedbackform {
+    margin: 10px;
+    padding: 10px;
 }
 
 
