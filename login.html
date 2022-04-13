@@ -10,7 +10,20 @@
     </head>
     <body>
         <header>
+            <div class="container-fluid modularitypendulum">
+                <div class="box pendulum one">M</div>
+                <div class="box">o</div>
+                <div class="box">d</div>
+                <div class="box">u</div>
+                <div class="box">l</div>
+                <div class="box">a</div>
+                <div class="box">r</div>
+                <div class="box">i</div>
+                <div class="box">t</div>
+                <div class="box pendulum two">y</div>
+            </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
                 <div class="container-fluid">
                   <a class="navbar-brand" href="./index.html">Modularity</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,15 +61,21 @@
             <div class="container login-form-container">
                 <form id="loginform">
                     <div class="row d-flex aligns-items-center">
-                        <div class="col-md-6">
-                                <label for="exampleFormControlInput1" class="form-label login-form-label"><u>Choose a Login Method:</u></label>
+                        <div class="col-md-9">
+                                <H6><u>Choose a Login Method:</u></H6>
                         </div>
-                        <div class="col-md-6 justify-content-end">
-                            <div>
-                                <span>Not registed? </span>
-                                <a href="./registration.html" id="signuplink">Sign Up</a>
+                        
+                            <div class="col-md-3 justify-content-end">
+                                <div>
+                                    <span>Not registed? </span>
+                                    <div class="col-md-12 justify-content-end">
+                                        <a type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#registrationmodal">
+                                    Sign Up
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        
                     </div>
                     <div class="row d-flex aligns-items-center">
                             <div class="mb-3">    
@@ -75,7 +94,7 @@
                     <div class="row d-flex aligns-items-center">      
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label login-form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <input type="password" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                             </div>
                     </div>
                     <div class="row d-flex aligns-items-center">
@@ -85,12 +104,56 @@
                                         <button type="button" class="btn btn-secondary">Cancel</button>
                                     </div>
                                     <div class="col-md-6 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-info">Login</button>
+                                        <button type="submit" class="btn btn-info" >Login</button>
                                     </div>
                                 </div>
                             </div>
                     </div>
+
                 </form>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="registrationmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog registrationmodal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Register for Modularity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerform">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="registrationemaill" class="registerform">Email Address:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="email" name="registrationemaill" class="registerform">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="username" class="registerform">Username:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="registrationemaill" class="registerform">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nah</button>
+                                            <button type="button" class="btn btn-primary">Sign me up!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
             </div>
         </main>
         <footer class="footer">
@@ -99,7 +162,6 @@
                     <div class="col-sm-3">
                        <p>&copy;Modularity 2022</p> 
                     </div>
-
                     <div class="col-sm-9">
                         <div class="container-fluid">
                             <div class="row justify-content-end">
