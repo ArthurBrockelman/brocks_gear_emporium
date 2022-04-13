@@ -31,9 +31,10 @@ body {
 
 
 .carousel-item img {
-    max-height: 70%;
+    height: 50%;
     min-width: auto;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
 .footer div {
