@@ -118,33 +118,154 @@
             <div class="modal-dialog registrationmodal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Register for Modularity</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel"><u>Register for Modularity</u></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form id="registerform">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="registrationemaill" class="registerform">Email Address:</label>
+                                    <fieldset>
+                                        <legend>User information</legend>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationemaill" class="registerform">Email Address:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="email" name="registrationemaill" class="registerform" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationusername" class="registerform">Username:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" name="registrationusername" class="registerform" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationpassword" class="registerform">Password:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="password" required class="registerform">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationconfirmationpassword" class="registerform">Confirm Password:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="password" id="registrationconfirmationpassword" required class="registerform">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-9">
-                                        <input type="email" name="registrationemaill" class="registerform">
-                                    </div>
-                                </div>
+                                </fieldset>
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="username" class="registerform">Username:</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <input type="text" name="registrationemaill" class="registerform">
+                                    <div class="container">
+                                        <fieldset>
+                                            <legend>Address information</legend>
+                                        </fieldset>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationaddressline1" class="registerform">Address Line 1:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" name="registrationaddressline1" id="registrationaddressline1" class="registerform" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="registrationaddressline2" class="registerform">Address Line 2:</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="registerform" id="registrationformline2" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <label for="city" class="registerform">City:</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="text" name="city" required class="registerform">
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <label for="state" class="registerform">State:</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select name="state" id="state" required class="registerform">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="CA">California</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="DC">District Of Columbia</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="MT">Montana</option>
+                                                    <option value="NE">Nebraska</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="NH">New Hampshire</option>
+                                                    <option value="NJ">New Jersey</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="PA">Pennsylvania</option>
+                                                    <option value="RI">Rhode Island</option>
+                                                    <option value="SC">South Carolina</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="VT">Vermont</option>
+                                                    <option value="VA">Virginia</option>
+                                                    <option value="WA">Washington</option>
+                                                    <option value="WV">West Virginia</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <label for="zipcode" class="registerform">Zip:</label>
+                                            </div> 
+                                            <div class="col-md-2">
+                                                <input type="text" required id="zipcode" class="registerform">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nah</button>
-                                            <button type="button" class="btn btn-primary">Sign me up!</button>
+                                            <button type="submit" class="btn btn-primary">Sign me up!</button>
                                         </div>
                                     </div>
                                 </div>
