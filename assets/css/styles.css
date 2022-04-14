@@ -5,12 +5,14 @@ html  {
 }
 
 main {
-    background-color: #00072d;;
+    background-color: #00072d;
+    z-index: 0;
 }
 
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    z-index: 0;
 }
 
 footer {
@@ -26,7 +28,7 @@ footer {
 
 .hero-carousel * {
     background-color: #00072d;
-
+    z-index: 1;
 }
 
 
@@ -139,6 +141,7 @@ a#signuplink {
 main > * {
     padding-top: 10px;
     background-color: #00072d;
+    z-index: 0;
 }
 
 .card {
@@ -273,4 +276,70 @@ html {
   }
 }
 
+
+/* animation code */
+
+
+.coolanimationcontainer {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 10%;
+    min-height: 10%;
+    background:#00072d;
+
+
+}
+
+.coolanimationcontainer .loader {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 40vw;
+    height: 40vh;
+    
+}
+
+.coolanimationcontainer .loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #fff;
+    pointer-events: none;
+    animation: animateThreads 5s linear infinite;
+    
+}
+
+.coolanimationcontainer .loader span:nth-child(1) {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+.coolanimationcontainer .loader span:nth-child(2) {
+    animation-direction: reverse;
+    border-radius: 67% 33% 70% 30% / 75% 65% 35% 25%;
+}
+
+.coolanimationcontainer .loader span:nth-child(3) {
+    animation-duration: 3s;
+    border-radius: 52% 48% 70% 30% / 41% 65% 35% 59%;
+}
+
+@keyframes animateThreads {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.coolanimationcontainer .loader h2 {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
 
