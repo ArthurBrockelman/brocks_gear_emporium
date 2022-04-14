@@ -59,7 +59,7 @@
         </header>
         <main class="pt-5">       
             <div class="container login-form-container">
-                <form id="loginform">
+                <form id="loginform" action="./index.html">
                     <div class="row d-flex aligns-items-center">
                         <div class="col-md-9">
                                 <H6><u>Choose a Login Method:</u></H6>
@@ -101,7 +101,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                        <a type="button" class="btn btn-secondary" href="./index.html">Cancel</a>
                                     </div>
                                     <div class="col-md-6 d-flex justify-content-center">
                                         <button type="submit" class="btn btn-info" >Login</button>
@@ -132,7 +132,7 @@
                                                 <label for="registrationemaill" class="registerform">Email Address:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="email" name="registrationemaill" class="registerform" required>
+                                                <input type="email" name="registrationemaill" class="registerform" required size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -140,7 +140,7 @@
                                                 <label for="registrationusername" class="registerform">Username:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="text" name="registrationusername" class="registerform" required>
+                                                <input type="text" name="registrationusername" class="registerform" required size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -148,7 +148,7 @@
                                                 <label for="registrationpassword" class="registerform">Password:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="password" required class="registerform">
+                                                <input type="password" required class="registerform" size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -156,7 +156,7 @@
                                                 <label for="registrationconfirmationpassword" class="registerform">Confirm Password:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="password" id="registrationconfirmationpassword" required class="registerform">
+                                                <input type="password" id="registrationconfirmationpassword" required class="registerform" size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
                                                 <label for="registrationaddressline1" class="registerform">Address Line 1:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="text" name="registrationaddressline1" id="registrationaddressline1" class="registerform" required>
+                                                <input type="text" name="registrationaddressline1" id="registrationaddressline1" class="registerform" required size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -179,7 +179,7 @@
                                                 <label for="registrationaddressline2" class="registerform">Address Line 2:</label>
                                             </div>
                                             <div class="col-md-9">
-                                                <input type="text" class="registerform" id="registrationformline2" required>
+                                                <input type="text" class="registerform" id="registrationformline2" required size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -187,7 +187,7 @@
                                                 <label for="city" class="registerform">City:</label>
                                             </div>
                                             <div class="col-md-2">
-                                                <input type="text" name="city" required class="registerform">
+                                                <input type="text" name="city" required class="registerform" size="40" maxlength="40 form="registerform"">
                                             </div>
 
                                         </div>
@@ -196,7 +196,7 @@
                                                 <label for="state" class="registerform">State:</label>
                                             </div>
                                             <div class="col-md-2">
-                                                <select name="state" id="state" required class="registerform">
+                                                <select name="state" id="state" required class="registerform" form="registerform">
                                                     <option value="AL">Alabama</option>
                                                     <option value="AK">Alaska</option>
                                                     <option value="AZ">Arizona</option>
@@ -256,7 +256,7 @@
                                                 <label for="zipcode" class="registerform">Zip:</label>
                                             </div> 
                                             <div class="col-md-2">
-                                                <input type="text" required id="zipcode" class="registerform">
+                                                <input type="text" required id="zipcode" class="registerform" size="40" maxlength="40" form="registerform">
                                             </div>
                                         </div>
                                     </div>
