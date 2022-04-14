@@ -32,10 +32,11 @@ footer {
 
 
 .carousel-item img {
-    height: 50%;
+    height: 570px;
     min-width: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+
   }
 
 .footer div {
@@ -149,6 +150,20 @@ main > * {
 }
 
 .btn-info {
+    background-color: #00072d;
+    color: azure
+}
+
+.bg-light {
+    background-color: azure
+}
+
+.tablecontainer {
+    padding: 20px;
+    background-color:#A6E1FA
+}
+
+.secondarytablecontainer {
     background-color: #00072d;
     color: azure
 }
