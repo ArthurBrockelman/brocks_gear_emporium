@@ -116,7 +116,7 @@ a#signuplink {
 }
 
 .registrationmodal {
-    max-width: 50vw;
+    max-width: fit-content;
     max-height: fit-content;
 }
 
@@ -128,16 +128,24 @@ a#signuplink {
     padding: 10px;
 }
 
+.sidekick {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
 .feedbackformcontainer {
-    height: 500px;
+    height: 600px;
     width: auto;
     background-color:#256e8d;
     color: azure;
     border: solid;
     border-color: #A6E1FA;
     margin-top: 40px;
+    padding: 40px;
 
 }
+
 
 main > * {
     padding-top: 10px;
